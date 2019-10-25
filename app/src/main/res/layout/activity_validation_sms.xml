@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Validation_sms"
+    android:background="@drawable/gps"
+    android:id="@+id/validation_sms"
+    >
+
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:background="#BF070606">
+
+                <TextView
+                    android:id="@+id/txNombre"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:text="TextView"
+                    android:textSize="20dp"
+                    android:textColor="@android:color/darker_gray" />
+
+                <TextView
+                    android:id="@+id/txNumero"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/txNombre"
+                    android:layout_centerHorizontal="true"
+                    android:text="TextView"
+                    android:textColor="@android:color/darker_gray"
+                    android:textSize="30dp" />
+
+                <EditText
+                    android:id="@+id/validation"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/txNumero"
+                    android:layout_centerHorizontal="true"
+                    android:hint="Code Validation"
+                    android:inputType="number"
+                    android:textColor="@android:color/background_light"
+                    android:textColorHint="@android:color/darker_gray" />
+
+                <Button
+                    android:id="@+id/button2"
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:background="#AD880B0B"
+                    android:layout_below="@+id/validation"
+                    android:textColor="@color/cardview_light_background"
+                    android:layout_centerInParent="true"
+                    android:text="Validar" />
+
+
+        </RelativeLayout>
+
+
+
+
+
+</RelativeLayout>
